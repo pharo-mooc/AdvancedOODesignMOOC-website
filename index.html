@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEhEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP7/AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+    <title>Pharo MOOC: Live Object Programming in Pharo</title>
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mooc.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#weeks"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.pharo.org">
+                    <img alt="Pharo" src="pictures/pharo-logo-small.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="weeks">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#module1">Module 1</a></li>
+                    <li><a href="#module2">Module 2</a></li>
+                    <li><a href="#module3">Module 3</a></li>
+                    <li><a href="#module4">Module 4</a></li>
+                    <li><a href="#module5">Module 5</a></li>
+                    <li><a href="#module6">Module 6</a></li>
+                    <li><a href="#module8">Module 8</a></li>
+                    <li><a href="#module9">Module 9</a></li>
+                    <li><a href="#module10">Module 10</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#credits">Authors</a></li>
+                </ul>
+            </div> <!-- navbar-collapse -->
+        </div> <!-- container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-1"></div>
+            <div class="col-md-6 col-lg-10">
+            <h1 id="pagetitle">The Advanced Object-Oriented Design MOOC</h1>
+        </div>
+        </div>
+        <section id="title">
+            <div class="course-image img-responsive center-block">
+                Vidéo
+                <!-- Front vidéo -->
+                <!-- <video id="video" controls preload="metadata" poster="pictures/teaser.jpg" width="640" heigh="360">
+                    <source src="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/C048SD-Teaser-OK.mp4"
+                        type="video/mp4">
+                    <track label="English" kind="subtitles" srclang="en"
+                        src="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/Subtitles/Teaser/C048SD-Teaser-OK.vtt"
+                        type="text/vtt" default>
+                </video> -->
+            </div>
+        </section>
+
+        <!-- Testimonies -->
+        <section>
+            <h2>Testimonies</h2>
+
+            <p>What the participants are saying :)</p>
+
+            <p>Thank you for these messages, they boost us!</p>
+
+            <div class="well testimony">No comment yet.</div>
+
+        </section>
+        <!-- /Testimonies  -->
+
+        <!-- About -->
+        <section id="about">
+            <h2>About this MOOC</h2>
+
+            <p>This MOOC is about <strong>Advanced Object-Oriented Design</strong>.
+            Either you are a beginner or an expert in object-oriented programming, this MOOC will immerge you in advanced object-oriented design.
+            We are sure that you will not develop the same way after following this unique lecture.
+            It is built on more than 60 years of expert teaching object-oriented design.
+
+            <!-- <a href="#about-details" data-toggle="collapse">More details…</a>
+                <div class="collapse" id="about-details"> -->
+                    This MOOC invites you to a journey around 11 modules (with over 60 videos) covering the following topics:
+                    <ul>
+                    <li>test-driven design</li>
+                    <li>essential object-oriented concepts</li>
+                    <li>foundational elements</li>
+                    <li>advanced idioms such as double dispatch</li>
+                    <li>advanced principles (registration, Law of Demeter, )</li>
+                    <li>selected design patterns</li>
+                    <li>type perspectives</li>
+                    <li>language idioms</li>
+                    <li>It also illustrates the topics on concrete case studies taken from Pharo. </li>
+                    </ul>
+
+                    The learners will be proposed several design exercises ranging from little interpreters to games and quizes.
+                <!-- </div> -->
+            </p>
+
+            <p>Why the Pharo programming language? <br>
+
+                This MOOC uses Pharo as a pedagogical vehicule but all the concepts you will learn are <strong>language independant</strong> and can be applied to any object-oriented language.
+                Nevertheless, we use Pharo because it is a pure object-oriented programming language.
+                It offers a unique developing experience in constant interaction with live objects.
+                Pharo is elegant, fun to use and very powerful. It is very easy to learn and enables to understand advanced concept in a natural way.
+                When programming in Pharo, you are immersed in a world of live objects.
+                You have immediate feedback at any moment of your development on objects representing web applications, code itself, graphics, network. More…
+
+                Note that there is full MOOC on <a href="http://mooc.pharo.org">Pharo</a> but it is <strong>not</strong> a requirement.
+                But, if you already followed it and liked it, this MOOC on Advanced Object-Oriented Design will bring you to the next level ;-)
+            </p>
+        </section>
+        <!-- /About -->
+
+
+        <!-- How to follow the MOOC or get its content? -->
+        <section>
+            <h2>How to follow this MOOC?</h2>
+
+            <p>Join the next session on FUN: <a href="https://www.fun-mooc.fr/courses/xxx">Openning Soon</a>.</p>
+
+            <p>or get all the material <a href="#download">here</a>.</p>
+
+
+            <h2>Your path</h2>
+
+            Find the path that suits you along all the MOOC resources.
+            Indeed, only few resources have dependencies.
+
+            TODO: explain dependencies here
+        </section>
+        <!-- /How -->
+
+
+        <!-- ================================================================================ -->
+        <section id="module1">
+            <!-- ================================================================================ -->
+            <h2>Module 1: Understanding messages</h2>
+            <p>This first module revisits elementary concepts around self, super and the power of dispatching to dedicated objects.
+            The case study shows how to go from a monolithic design with one kind of formats to the handling of optional different formats in the Pillar ddocument compilation chain.</p>
+
+            <!-- <p>
+                Resources:
+                <ul>
+                    <li><a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/">Slides and exercises</a></li>
+                </ul>
+
+                <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/">EN videos</a>
+                <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/FR/">FR videos</a>
+                <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/Subtitles/">Subtitles</a>(french,english, spanish and japanese).
+                Watch
+                <a href="https://www.youtube.com/watch?v=JUKIjdjGjBU&list=PL2okA_2qDJ-kCHVcNXdO5wsUZJCY31zwf">EN videos</a> or
+                <a href="https://www.youtube.com/watch?v=-Sk_35lB-EI&list=PL2okA_2qDJ-k83Kxu_d8EPzMXtvCrReRn">FR videos</a>.
+            </p> -->
+
+            <ol class="moduleresources">
+                <li>M1-1 <span class="label label-primary">Lecture</span> Essence of Dispatch - Taking Pharo Booleans as Example</li>
+                <li>M1-2 <span class="label label-primary">Lecture</span> Essence of Dispatch</li>
+                <li>M1-3 <span class="label label-primary">Lecture</span> Inheritance Basics</li>
+                <li>M1-4 <span class="label label-primary">Lecture</span> Inheritance and Lookup: Self - Understanding lookup once for all</li>
+                <li>M1-5 <span class="label label-primary">Lecture</span> About super</li>
+                <li>M1-6 <span class="label label-primary">Lecture</span> Reification and delegation - Microdown in Pillar case study</li>
+            </ol>
+        </section>
+
+        <!-- ================================================================================ -->
+        <section id="module2">
+        <!-- ================================================================================ -->
+            <h2>Module 2: Tests</h2>
+            <p>This module covers an important aspect: testing applications and how to take advantage of test driven design. It shows in particular the power of eXtreme Test Driven Design and how writing tests first and coding in the debugger is empowering the designer.
+            </p>
+
+            <ol class="moduleresources">
+                <li>M2-1 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M2-2 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M2-3 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M2-4 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M2-5 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M2-6 <span class="label label-primary">Lecture</span> xxx</li>
+            </ol>
+        </section>
+
+        <!-- ================================================================================ -->
+        <section id="module3">
+        <!-- ================================================================================ -->
+            <h2>Module 3: Hooks</h2>
+            <p>In this module we will start to look at design pattern. In parallel we will discuss a key point of object-oriented design that is how to design abstraction that extensible using hooks. The case study will be about going from monolithic to parametrized objects.
+            </p>
+
+            <ol class="moduleresources">
+                <li>M1-1 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M1-2 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M1-3 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M1-4 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M1-5 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M1-6 <span class="label label-primary">Lecture</span> xxx</li>
+            </ol>
+        </section>
+
+       <!-- ================================================================================ -->
+       <section id="module4">
+        <!-- ================================================================================ -->
+            <h2>Module 4: Objects: state and behavior</h2>
+            <p>In this module we will focus on basic principle showing for example the difference between data and objects. We will start also to present
+                some design patterns such as Singleton and Decorator
+            </p>
+
+            <ol class="moduleresources">
+                <li>M4-1 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M4-2 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M4-3 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M4-4 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M4-5 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M4-6 <span class="label label-primary">Lecture</span> xxx</li>
+            </ol>
+        </section>
+
+       <!-- ================================================================================ -->
+       <section id="module5">
+        <!-- ================================================================================ -->
+            <h2>Module 5: Elementary design patterns</h2>
+            <p>In this module we will present some important and simple design patterns such as composite or state. We will then propose to compare use versus inheritance a way to understand the forces in presence.
+            </p>
+
+            <ol class="moduleresources">
+                <li>M5-1 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M5-2 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M5-3 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M5-4 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M5-5 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M5-6 <span class="label label-primary">Lecture</span> xxx</li>
+            </ol>
+        </section>
+
+
+       <!-- ================================================================================ -->
+       <section id="module6">
+        <!-- ================================================================================ -->
+            <h2>Module 6: About double dispatch</h2>
+            <p>In this module we will zzz
+            </p>
+
+            <ol class="moduleresources">
+                <li>M6-1 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M6-2 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M6-3 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M6-4 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M6-5 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M6-6 <span class="label label-primary">Lecture</span> xxx</li>
+            </ol>
+        </section>
+
+       <!-- ================================================================================ -->
+       <section id="module7">
+        <!-- ================================================================================ -->
+            <h2>Module 7: Creation</h2>
+            <p>In this module we will zzz
+            </p>
+
+            <ol class="moduleresources">
+                <li>M7-1 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M7-2 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M7-3 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M7-4 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M7-5 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M7-6 <span class="label label-primary">Lecture</span> xxx</li>
+            </ol>
+        </section>
+
+       <!-- ================================================================================ -->
+       <section id="module8">
+        <!-- ================================================================================ -->
+            <h2>Module 8: Sharing</h2>
+            <p>In this module we will zzz
+            </p>
+
+            <ol class="moduleresources">
+                <li>M8-1 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M8-2 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M8-3 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M8-4 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M8-5 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M8-6 <span class="label label-primary">Lecture</span> xxx</li>
+            </ol>
+        </section>
+
+       <!-- ================================================================================ -->
+       <section id="module9">
+        <!-- ================================================================================ -->
+            <h2>Module 9: About Inversion of control / Registration</h2>
+            <p>In this module we will zzz
+            </p>
+
+            <ol class="moduleresources">
+                <li>M9-1 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M9-2 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M9-3 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M9-4 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M9-5 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M9-6 <span class="label label-primary">Lecture</span> xxx</li>
+            </ol>
+        </section>
+
+       <!-- ================================================================================ -->
+       <section id="module10">
+        <!-- ================================================================================ -->
+            <h2>Module 10: About Types</h2>
+            <p>In this module we will zzz
+            </p>
+
+            <ol class="moduleresources">
+                <li>M10-1 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M10-2 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M10-3 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M10-4 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M10-5 <span class="label label-primary">Lecture</span> xxx</li>
+                <li>M10-6 <span class="label label-primary">Lecture</span> xxx</li>
+            </ol>
+        </section>
+
+        <section id="resources">
+            <h2>Install Pharo for this MOOC</h2>
+            <div class="teaser">
+                <ol>
+                    <li>Download and install the <a class="btn download" href="http://pharo.org/download">Pharo Launcher</a> for your OS</li>
+                    <li>Execute Pharo Launcher and select <strong>create image</strong> menu entry in the contextual menu of <strong>Pharo Mooc</strong></li>
+                    <li>Select your newly downloaded Pharo Mooc image in the right pane and click on the green play button on the uppper right button bar</li>
+                </ol>
+
+            <h2>External resources</h2>
+            <p>
+                You can find free and online resources in the <a href="https://www.pharo.org/documentation">Documentation</a> page.
+                We recommend the Updated Pharo by Example book, the Pharo cheat-sheet, and the new book Learning Object-Oriented Programming, Design and
+                TDD with Pharo on <a href="http://books.pharo.org/">http://books.pharo.org</a>
+            </p>
+        </section>
+
+        <section id="credits">
+            <h2>Authors</h2>
+            <div class="row">
+
+                <div class="col-xs-3">
+                    <!-- <section class="bio"> -->
+                    <section class="well bio">
+                        <img alt="Stéphane Ducasse" src="pictures/sducasse.png" class="teacher" />
+                        <h3>Stéphane Ducasse</h3>
+                        <p>Stéphane Ducasse is directeur de
+                            recherche at Inria. He leads the RMoD
+                            team. He is expert in two domains:
+                            object-oriented language design and
+                            reengineering. His works on traits
+                            have been introduced in AmbientTalk,
+                            Slate, Pharo, Perl-6, PHP 5.4 and
+                            Squeak. They have also
+                            influenced JavaScript, Scala and
+                            Fortress. Stéphane is also expert on
+                            software quality, program
+                            understanding, program visualisations,
+                            reengineering and metamodeling. He is
+                            one of the developers of Pharo. He is
+                            also one of the developers of Moose,
+                            an open-source software analysis
+                            platform. He created Synectique a
+                            company building dedicated tools for
+                            advanced software analysis. Stéphane
+                            wrote several books on programming
+                            learning and other topics such as web
+                            programming.</p>
+                    </section>
+                </div>
+                <div class="col-xs-3">
+                    <section class="well bio">
+                        <img alt="Luc Fabresse" src="pictures/lfabresse.png" class="teacher" />
+                        <h3>Luc Fabresse</h3>
+                        <p>Luc Fabresse is currently professor in computer science at IMT Nord Europe.
+                        His researches focus on dynamic and reflective languages such as Pharo to better support programming in the context of mobile robotics and IoT.
+                        It involves deployment, code update, memory management and bootstraping.
+                        He mainly applies his work on fleet of collaborating mobile robots involving challenges such as: localization, navigation and distributed coordination.
+                        Luc's long-term vision is to be able to use Jedi mind trick on mobile robots ;-)
+                        Meanwhile, Luc gives many computer science lectures, co-organizes events (technical days, conferences, ...), promotes Smalltalk (ESUG board member) and participates to its open-source implementation Pharo.</p>
+                    </section>
+                </div> <!-- column -->
+                <div class="col-xs-3">
+                    <section class="well bio">
+                        <img alt="Guillermo Polito" src="pictures/gpolito.png" class="teacher" />
+                        <h3>Guillermo Polito</h3>
+                        <p>TODO</p>
+                    </section>
+                </div> <!-- column -->
+                <div class="col-xs-3">
+                    <section class="well bio">
+                        <img alt="Pablo Tesone" src="pictures/ptesone.png" class="teacher" />
+                        <h3>Pablo Tesone</h3>
+                        <p>TODO</p>
+                    </section>
+                </div> <!-- column -->
+            </div> <!-- row -->
+        </section>
+
+        <!-- Authors,Sponsors -->
+        <section>
+            <h2>Partners</h2>
+            <div class="partners-logos">
+
+                <a href="http://www.inria.fr/" target="_blank">
+                    <img alt="logo inria recherche" src="pictures/logo-inria.jpeg" height="80">
+                </a>
+                <a href="http://www.univ-lille.fr/" target="_blank">
+                    <img alt="logo Université de Lille" src="pictures/universite-lille.png" height="90">
+                </a>
+                <a href="http://www.imt-nord-europ.fr/" target="_blank">
+                    <img alt="logo IMT Nord Europe" src="pictures/logo-IMT.jpg" height="100">
+                </a>
+
+                <a href="http://www.unit.eu/" target="_blank">
+                    <img alt="logo unit" src="pictures/unit.png" height="80">
+                </a>
+            </div> <!-- partners-logos -->
+        </section>
+        <!-- /Authors,Sponsors -->
+
+        <footer class="text-center">
+            <p>This webpage is hosted on
+                <a href="https://github.com/SquareBracketAssociates/PharoMoocOO-website">Github</a>.</p>
+        </footer>
+    </div>
+
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
