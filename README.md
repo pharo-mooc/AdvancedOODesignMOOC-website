@@ -1,1 +1,1 @@
-Sources of the [Advanced OO Design MOOC website](http://xxx.pharo.org)
+Sources of the [Advanced OO Design MOOC website](https://advanced-design-mooc.pharo.org/)
