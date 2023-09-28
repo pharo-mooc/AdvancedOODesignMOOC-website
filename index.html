@@ -97,13 +97,13 @@ It is built on more than 60 years of expert teaching object-oriented design.
                     This MOOC invites you to a journey around 10 modules (with over 60 videos) covering the following topics:
                     <ul>
                     <li>Understanding messages</li>
-                    <li>Test-driven Design</li>
+                    <li>Test-Driven Design</li>
                     <li>Hooks: support for evolution</li>
                     <li>Objects: state and behavior</li>
                     <li>Elementary design patterns</li>
                     <li>Double dispatch</li>
-                    <li>Object Creation</li>
-                    <li>Sharing Objects</li>
+                    <li>Object creation</li>
+                    <li>Sharing objects</li>
                     <li>Inversion of control</li>
                     <li>About types</li>
                     </ul>
@@ -134,17 +134,8 @@ It is built on more than 60 years of expert teaching object-oriented design.
 
             <p>Join the next session on FUN: <a href="https://www.fun-mooc.fr/courses/xxx">Opening January 2024</a>.</p>
 
-            <p>or get all the material <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/">http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/</a>.</p>
+            <p>or get all the material <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/">http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/</a>. Check the resources section below</p>
 
-            <h3>Your path</h3>
-
-		
-		 
-	<p>
-            Find the path that suits you along all the MOOC resources.
-            Indeed, only few resources have dependencies.
-
-            TODO: explain dependencies here
         </section>
         <!-- /How -->
 
@@ -216,9 +207,20 @@ It is built on more than 60 years of expert teaching object-oriented design.
         <section id="module3">
         <!-- ================================================================================ -->
             <h2>Module 3: Hooks</h2>
-            <p>In this module we will start to look at design pattern. In parallel we will discuss a key point of object-oriented design that is how to design abstraction that extensible using hooks. The case study will be about going from monolithic to parametrized objects.
+            <p>In this module we will start to look at design patterns. In parallel, we will discuss a key point of object-oriented design which is how to design abstractions that are extensible using hooks. The case study is about going from monolithic to parametrized objects.
             </p>
 
+<b>Teaching objectives</b>
+
+<ul>
+<li> Introduction to design patterns</li>
+<li> Use hooks to extend code</li>
+<li> Analyze hook and template methods</li>
+<li> Use a stream and avoid creating spurious objects</li>
+<li> Move from a monolithic global design to one that can be parameterized</li>
+</ul>
+
+<b>Sessions</b>
             <ol class="moduleresources">
                 <li>M3-1 <span class="label label-primary">Lecture</span>An introduction to design patterns</li>
                 <li>M3-2 <span class="label label-primary">Lecture</span>Message Sends are Plans for Reuse</li>
@@ -235,6 +237,18 @@ It is built on more than 60 years of expert teaching object-oriented design.
             <p>In this module we will focus on basic principle showing for example the difference between data and objects. We will start also to present some design patterns such as Singleton and Decorator.
             </p>
 
+<b>Teaching objectives</b>
+
+<ul>
+<li>Rethink object API</li>
+<li>Distinguish between an object and a data structure</li>
+<li> Identify the different syntactic forms of global variables</li>
+<li> Identify the disadvantages of fat classes and replace them with class hierarchies and delegation</li>
+<li> Implement the Singleton pattern, with its advantages and disadvantages</li>
+<li> Apply the Decorator design pattern and identify when to use it</li>
+</ul>
+
+<b>Sessions</b>
             <ol class="moduleresources">
                 <li>M4-1 <span class="label label-primary">Lecture</span>Methods: the elementary unit of reuse</li>
                 <li>M4-2 <span class="label label-primary">Lecture</span>Objects vs. Data - An API perspective studying the class Point</li>
@@ -251,7 +265,21 @@ It is built on more than 60 years of expert teaching object-oriented design.
             <h2>Module 5: Elementary design patterns</h2>
             <p>In this module we will present some important and simple design patterns such as composite or state. We will then propose to compare use versus inheritance a way to understand the forces in presence.
             </p>
+<b>Teaching objectives</b>
 
+<ul>
+<li>Understand the Composite design pattern and identify when to use it</li>
+<li>Use the State design pattern to design objects with many states, complex transitions</li> between states and operations that depend on each state</li>
+<li>Understand the Command design pattern and identify when to use it</li>
+<li>Use a design pattern in the real world</li>
+<li>Compare inheritance-based and delegation-based designs</li>
+<li>Identify the benefits of using objects to represent complex algos</li>
+<li>Recognize when it is preferable to use objects rather than blocks</li>
+<li>Identify the use of NullObject design pattern and the benefit of object state initialization</li>
+<li>Manage methods with a large number of arguments and design fluid APIs</li>
+</ul>
+
+<b>Sessions</b>
             <ol class="moduleresources">
                 <li>M5-1 <span class="label label-primary">Lecture</span>Composite: a Nice and Common Design Pattern</li>
                 <li>M5-2 <span class="label label-primary">Lecture</span>About State Design Pattern</li>
@@ -267,9 +295,26 @@ It is built on more than 60 years of expert teaching object-oriented design.
        <section id="module6">
         <!-- ================================================================================ -->
             <h2>Module 6: About double dispatch</h2>
-            <p>This module prensents the double dispatch mechanism and the Visitor design pattern which is based on it.
+            <p>This module presents the double dispatch mechanism and the Visitor design pattern which is based on it.
             </p>
+<b>Teaching objectives</b>
 
+<ul>
+<li> Use the power of sending messages to get a more modular design</li>
+<li>Apply Double dispatch to non-symmetrical domains</li>
+<li>Identify the double dispatch mechanisms and use them with a simple example</li>
+<li>Apply the Visitor design pattern and identify when to use it</li>
+<li>Use and implement the possible variations of the Visitor design pattern </li>
+<li>Question the return of values, numbers vs. symbols</li>
+<li>Use the double dispatch mechanisms in more complex cases</li>
+</ul>
+
+
+
+
+
+
+<b>Sessions</b>
             <ol class="moduleresources">
                 <li>M6-1 <span class="label label-primary">Lecture</span>A double dispatch starter: Stone Paper Scissors</li>
                 <li>M6-2 <span class="label label-primary">Lecture</span>Double dispatch: Does not have to be symmetrical</li>
@@ -287,7 +332,20 @@ It is built on more than 60 years of expert teaching object-oriented design.
             <h2>Module 7: Creation</h2>
             <p>This module focuses on patterns to create and initialize objects.
             </p>
+<b>Teaching objectives</b>
 
+<ul>
+<li>Identify the benefit of delaying the initialization of an object until it is needed</li>
+<li>Analyze the impact of the granularity of hooks</li>
+<li>Use a mechanism for specifying extensible class names by default to avoid hardcoding them</li>
+<li>Use the delegation of actions and accumulator concepts</li>
+<li>Use of behavior delegation to avoid programming complex conditions</li>
+<li>Use the Builder design pattern to create complex object graphs</li>
+<li>Identify and use different API design alternatives for Builder Patterns</li>
+<li>Explain the relation between super and lookup when sending a message</li>
+</ul>
+
+<b>Sessions</b>
             <ol class="moduleresources">
                 <li>M7-1 <span class="label label-primary">Lecture</span>About Null Check: The case of lazy initialization</li>
                 <li>M7-2 <span class="label label-primary">Lecture</span>Customization degree of hooks: Class vs. instance hooks</li>
@@ -303,9 +361,15 @@ It is built on more than 60 years of expert teaching object-oriented design.
        <!-- ================================================================================ -->
        <section id="module8">
         <!-- ================================================================================ -->
+		
+<b>Sessions</b>		
             <h2>Module 8: Sharing</h2>
             <p>This module presents different techniques and design patterns to share objects.
             </p>
+
+<b>Teaching objectives</b>
+
+
 
             <ol class="moduleresources">
                 <li>M8-1 <span class="label label-primary">Lecture</span>Shared variables: A Pharo code idiom</li>
@@ -325,6 +389,9 @@ It is built on more than 60 years of expert teaching object-oriented design.
             <p>In this module, we present the law of demeter and different techniques to achieve Inversion of control.
             </p>
 
+<b>Teaching objectives</b>
+
+<b>Sessions</b>
             <ol class="moduleresources">
                 <li>M9-1 <span class="label label-primary">Lecture</span>About coupling and encapsulation</li>
                 <li>M9-2 <span class="label label-primary">Lecture</span>Class Methods At Work</li>
@@ -342,6 +409,10 @@ It is built on more than 60 years of expert teaching object-oriented design.
             <p>This modules focuses on typing and their relation with object-oriented design.
             </p>
 
+<b>Teaching objectives</b>
+
+
+<b>Sessions</b>
             <ol class="moduleresources">
                 <li>M10-1 <span class="label label-primary">Lecture</span>The two interfaces: In presence of delta programming</li>
                 <li>M10-2 <span class="label label-primary">Lecture</span>Subclassing vs. Subtyping</li>
@@ -352,16 +423,33 @@ It is built on more than 60 years of expert teaching object-oriented design.
         </section>
 
         <section id="resources">
-            <h2>Install Pharo for this MOOC</h2>
+            <h2>Get started</h2>
+	<h3>Install Pharo </h3>
             <p>Download and install the <a class="btn download" href="http://pharo.org/download">Pharo Launcher</a> for your OS</p>
 
-            <h2>External resources</h2>
+            <h3>External resources</h3>
             <p>
-                You can find free and online resources in the <a href="https://www.pharo.org/documentation">Documentation</a> page.
-                We recommend the Updated Pharo by Example book, the Pharo cheat-sheet, and the new book Learning Object-Oriented Programming, Design and
+                You can find free and online resources in the <a href="https://www.pharo.org/documentation">Documentation</a> page. 
+               
+			<p> We recommend the Updated Pharo by Example book, the Pharo cheat-sheet, and the new book Learning Object-Oriented Programming, Design and
                 TDD with Pharo on <a href="http://books.pharo.org/">http://books.pharo.org</a>
             </p>
+	  <p>   <a href="https://pharo.org/community">Join the discord server of the community</a> There is newbie help channel and people are friendly.
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <section id="credits">
             <h2>Authors</h2>
