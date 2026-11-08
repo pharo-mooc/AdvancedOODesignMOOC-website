@@ -1,649 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEhEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP7/AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
-    <title>The Advanced Object-Oriented Design MOOC with Pharo</title>
-    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mooc.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Object-Oriented Design MOOC with Pharo</title>
+  <meta name="description" content="Free self-paced MOOC on advanced object-oriented design: 10 modules, over 60 videos, slides and a companion exercise book. Language-independent concepts illustrated with Pharo.">
+  <link rel="stylesheet" href="css/modern.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#weeks"
-	    aria-expanded="false">
-	    <span class="sr-only">Toggle navigation</span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	</button>
-	<a class="navbar-brand" href="https://advanced-design-mooc.pharo.org">
-	    <img alt="Pharo" src="pictures/pharo-logo-small.png">
-	</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="weeks">
-	<ul class="nav navbar-nav">
-	    <li><a href="#about">About</a></li>
-	    <li><a href="#module1">Module 1</a></li>
-	    <li><a href="#module2">Mod. 2</a></li>
-	    <li><a href="#module3">Mod. 3</a></li>
-	    <li><a href="#module4">Mod. 4</a></li>
-	    <li><a href="#module5">Mod. 5</a></li>
-	    <li><a href="#module6">Mod. 6</a></li>
-		<li><a href="#module7">Mod. 7 </a></li>
-	    <li><a href="#module8">Mod. 8</a></li>
-	    <li><a href="#module9">Mod. 9</a></li>
-	    <li><a href="#module10">Mod. 10</a></li>
-	    <li><a href="#resources">Resources</a></li>
-	    <li><a href="#credits">Authors</a></li>
-	</ul>
-            </div> <!-- navbar-collapse -->
-        </div> <!-- container-fluid -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="pictures/pharo-logo-small.png" alt="">Advanced OO Design</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#enroll">Enroll</a>
+      <a href="#about-course">About</a>
+      <a href="#testimonies">Testimonies</a>
+      <a href="#book">Book</a>
+      <a href="#install">Get started</a>
+      <a href="#modules">Modules</a>
+      <a href="#authors">Authors</a>
     </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-lg-1"></div>
-            <div class="col-md-6 col-lg-10">
-<!--            
-	<h3>The Mooc:  Advanced Object-Oriented Design and Development with Pharo</h3>
--->
+    <a class="btn small" href="https://www.fun-mooc.fr/en/courses/advanced-object-oriented-design-and-development-with-pharo/">Enroll on FUN</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Advanced <span>Object-Oriented Design</span> and Development</h1>
+        <p class="lead">Understand the key mechanisms and the essence of object-oriented design: messages, tests, hooks,
+        design patterns, double dispatch, object creation, sharing, inversion of control and types.</p>
+        <div class="actions">
+          <a class="btn" href="https://www.fun-mooc.fr/en/courses/advanced-object-oriented-design-and-development-with-pharo/">Enroll on FUN — free</a>
+          <a class="btn ghost" href="#modules">Browse the modules</a>
         </div>
-        </div>
-		
-        <section id="title">
-            <div class="course-image img-responsive center-block">
-				
-	<!-- Front vidéo -->
-	<video id="video" controls preload="metadata" 
-		poster="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/TeaserFront.jpg" 
-		width="640" heigh="360"
-		aria-label="The Mooc:  Advanced Object-Oriented Design and Development with Pharo"
-		>
-	    <source src="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/TeaserAOODDMOOC.mp4"
-	        type="video/mp4">
-	</video>
-            </div>
-</section>
-
-<!--
-	    <track label="English" kind="subtitles" srclang="en"
-	        src="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/Subtitles/Teaser/C048SD-Teaser-OK.vtt"
-	        type="text/vtt" default>
--->
-
-<section>
-	<h2>Testimonies</h2>
-
-	<p>What the participants are saying :)</p>
-
-	<div class="well testimony">I love this course so much. I remember how difficult it was to understand OOD concepts in the early 2000s. There were a lot of aphorisms flowing around, but when I asked the people stating them to explain it, no one really did. It is so satisfying to see lecture after lecture explaining those object-oriented principles while refactoring examples. This is the course I wanted 24 years ago. So happy that it exists today. bambooer</div>
-
-	<div class="well testimony">Hi, thank you for the excellent MOOC. I just completed Module 1. The quizzes really help.
-I am going to say this a lot. I am warning you. What a great course this is. The lectures are solid. I am working through the first exercise, and I have been learning so much and consolidating the information from the lectures along with practicing pharo. I believe this course will be my model whenever I write training in the future. stfan10</div>
-
-	<div class="well testimony">In my opinion, this MOOC is a must-learn for any developer using Object-Oriented Programming. It teaches the essential concepts common to most OOP languages in a concise and well-paced way. The choice of Pharo as an illustrative language definitely felt appropriate, and was never an obstacle to understanding the content of the course. I would definitely recommend completing the companion exercises, whether in Pharo or your OOP language of choice. </div>
-
-<div class="well testimony">High-level course stimulate your brain and gives you lots of inputs to go on learning more and more... </div>
-
-
-<div class="well testimony">The knowledge, syllabus and pacing are excellent. Recording is of good quality (minus the occasional typos), even at an accelerated speed (I used 1.5x). Thank you so much for giving me the rationales to finally understand the OOP paradigm after years of working with it using heuristics and half-understood notions. It feels like a new beginning for me. </div>
-
-<div class="well testimony">Modules 1-4 should be taught to and understood by anyone programming with an OOP language. I appreciate that these pieces of invaluable knowledge keep being repeated in the other modules. </div>
-
-<div class="well testimony">My most sincere compliments. It is rare to find a course that is so specialized and practical at the same time. </div>
-
-</section>
-
-
-
-
-<!-- About -->
-<section id="about">
-	<h2>About this MOOC</h2>
-
-	<p>This MOOC is about <strong>Advanced Object-Oriented Design</strong>.
-You will get to know and understand the key mechanisms and the essence of OOD.
-Either you are a beginner or an expert in object-oriented programming, this MOOC immerses you in advanced object-oriented design.
-
-We are sure that you will not develop the same way after following this unique lecture.
-It is built on more than 60 years of expert teaching object-oriented design.
-
-	This MOOC invites you to a journey around 10 modules (with over 60 videos) covering the following topics:
-<ul>
-	<li>Understanding messages</li>
-	<li>Test-Driven Design</li>
-	<li>Hooks: support for evolution</li>
-	<li>Objects: state and behavior</li>
-	<li>Elementary design patterns</li>
-	<li>Double dispatch</li>
-	<li>Object creation</li>
-	<li>Sharing objects</li>
-	<li>Inversion of control</li>
-	<li>About types</li>
-</ul>
-
-	The Mooc proposes several design exercises ranging from little interpreters to games and quizzes.
-</p>
-
-	<p><b>Why the Pharo programming language? </b><br>
-	This MOOC uses Pharo as a pedagogical vehicle but all the concepts you will learn are <strong>language independent </strong> and can be applied to any object-oriented language.
-	We use Pharo because it is a pure object-oriented programming language.
-	It offers a unique developing experience in constant interaction with live objects.
-	Pharo is elegant, fun to use, and very powerful. It is very easy to learn and enables to understand advanced concepts in a natural way.
-	When programming in Pharo, you are immersed in a world of live objects.
-	You have immediate feedback at any moment of your development on objects representing web applications, code itself, graphics, and network.
-	So Pharo is <strong>the perfect environment to teach deep object-oriented programming</strong>.</p> 
-	
-<p>Note that there is a full MOOC on <a href="http://mooc.pharo.org">Pharo</a> but it is <strong>not</strong> a requirement.
-If you already followed it and liked it, this MOOC on Advanced Object-Oriented Design will bring you to the next level ;-)
-</p>
-</section>
-<!-- /About -->
-
-
-<!-- How to follow the MOOC or get its content? -->
-<section>
-            <h2>How to follow this MOOC?</h2>
-
-            <p>Join the next session on FUN: <a href="https://www.fun-mooc.fr/courses/xxx">Opening May 2024</a>.</p>
-
-            <p>Or get all the material <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/">http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/</a>.</p>
-
-        </section>
-        <!-- /How -->
-
-<section id="Exercises">
-<h2>Mooc Exercises and Companion Book</h2>
-We designed a set of exercises that you can do to train yourself on object-oriented design.
-We packaged them as a book <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/2024-04-01-CompanionExercise.pdf">Companion exercise book in PDF</a>.
-If you find mistakes, please open issues at: <a href="https://github.com/SquareBracketAssociates/booklet-AdvancedMicroProjects"> https://github.com/SquareBracketAssociates/booklet-AdvancedMicroProjects</a>. This will help us improve the book and soon publish the book.
-</section>.
-
-<section id="moocmap">
-	<h3>Mooc Map</h3>
-
-The following picture shows the different modules.
-You can see the mooc overview <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/0-AboutTheMooc.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M00_S0.mp4"> VIDEO </a>
-
-<p>	<img alt="Pharo" src="pictures/Map.jpg" width="500" height="500> </p>
-</section>
-
-
-<section id="module0">
-	<h2>Module 0: Little Warm up with Pharo</h2>
-	<p>This first optional module presents some lectures from the Pharo Mooc.
-It helps the reader who wants to follow the syntax used in the slides and do the exercises to learn fast Pharo. We suggest to execute the expression ProfStef new go and perform the proposed exercises.</p>
-
-<b>Teaching objectives</b>
-<ul>
-<li>Pharo syntax</li>
-<li>Pharo object model</li>
-</ul>
-
-
-<b>Core elements</b>
-The following short videos explain the full language. 
-<ol class="moduleresources">
-	<li>M0-1 <span class="label label-primary">Lecture</span>Pharo Object Model in a Nutshell<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/C019-W1S04-PharoModelInaNushell.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week1/C019SD-W1-S4-EN-V1.mp4"> VIDEO </a></li>
-	<li>M0-2 <span class="label label-primary">Lecture</span>Pharo Syntax in a Nutshell<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/C019-W1S05-PharoSyntaxInANutshell.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week1/C019SD-W1-S5-EN-V1.mp4"> VIDEO </a></li>
-	<li>M0-3 <span class="label label-primary">Lecture</span>Class and Method Definitions <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/C019-W1S06-ClassAndMethodDefinition.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week1/C019SD-W1-S6-EN-V1.mp4"> VIDEO </a></li>
-	<li>M0-4 <span class="label label-primary">Lecture</span>Understanding Messages<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S01-Messages.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S1-EN-V1.mp4"> VIDEO </a></li>
-	<li>M0-5 <span class="label label-primary">Lecture</span>Messages for Java Programmers<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S02-Messages-ForTheJavaProgrammers.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S2-EN-V1.mp4"> VIDEO </a></li>
-	<li>M0-6 <span class="label label-primary">Lecture</span>Messages: Composition and Precedence<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S03-Messages-Precedence.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S3-EN-V1.mp4"> VIDEO </a></li>
-	<li>M0-7 <span class="label label-primary">Lecture</span>Understanding Messages: Sequence and Cascade<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S04-Messages-Sequence.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S4-EN-V1.mp4"> VIDEO </a></li>
-		
-		<li>M0-8 <span class="label label-primary">Lecture</span>Introduction to Blocks<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S06-Blocks.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S6-EN-V1.mp4"> VIDEO </a></li>
-            </ol>
-
-<b>Extras</b>
-The following short videos explain some extra points. 
-            <ol class="moduleresources">
-	<li>M0-9 <span class="label label-primary">Lecture</span>Loops<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S07-Loops.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S7-EN-V1.mp4"> VIDEO </a></li>
-	
-	 <li>M0-10 <span class="label label-primary">Lecture</span>Yourself<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S10-Yourself.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S10-EN-V1.mp4"> VIDEO </a></li>
-	 
-	  <li>M0-11 <span class="label label-primary">Lecture</span>Class methods<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week3/C019-W3S06-BasicClassMethods.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week3/C019SD-W3-S6-EN-V1.mp4"> VIDEO </a></li>
-	 
-	  <li>M0-12 <span class="label label-primary">Lecture</span>Parenthesis Vs Square Brackets<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S09-ParenthesisVsSquareBrackets.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S9-EN-V1.mp4"> VIDEO </a></li>
-	 
-	   <li>M0-12 <span class="label label-primary">Lecture</span>Iterators<a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week3/C019-W3S09-Iterators.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week3/C019SD-W3-S9-EN-V1.mp4"> VIDEO </a></li>
-            </ol>
-
-
-</section>
-        <!-- ================================================================================ -->
-        <section id="module1">
-            <!-- ================================================================================ -->
-            <h2>Module 1: Understanding messages</h2>
-            <p>This first module revisits elementary concepts around self, super, and the power of dispatching to dedicated objects.
-	The case study shows how to go from a monolithic design with one kind of format to the handling of optional different formats in the Pillar document compilation chain.</p>
-
-<b>Teaching objectives</b>
-<ul>
-<li> Completely rethink what it means to send a message</li>
-<li> Explain that sending a message is making a choice based on classes</li>
-<li> Distinguish between static and dynamic approaches to inheritance</li>
-<li>  Understand what is to send a message and how lookup works</li>
-<li>  Understand deeply what super is </li>
-<li>  Apply the mechanics of a transformation that makes implicit behavior explicit</li>
-</ul>
-
-
-<b>Sessions</b>
-            <ol class="moduleresources">
-	<li>M1-1 <span class="label label-primary">Lecture</span>Essence of Dispatch:  Taking Pharo Booleans as Example <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-1-Essence-01-NotExample.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S1.mp4"> VIDEO </a></li>
-	<li>M1-2 <span class="label label-primary">Lecture</span>Essence of Dispatch: Let the receiver decide <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-2-Essence-02-Dispatch.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S2_V2.mp4"> VIDEO </a></li>
-	<li>M1-3 <span class="label label-primary">Lecture</span>Inheritance Basics <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-3-Essence-03-Inheritance-Basic.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S3.mp4"> VIDEO </a></li>
-	<li>M1-4 <span class="label label-primary">Lecture</span>Inheritance and Lookup: Self - Understand lookup once for all <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-4-Essence-04-Self.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S4.mp4"> VIDEO </a></li>
-	<li>M1-5 <span class="label label-primary">Lecture</span>About super <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-5-Essence-05-Super.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S5.mp4"> VIDEO </a></li>
-	<li>M1-6 <span class="label label-primary">Lecture</span>Reification and delegation - A case study: Microdown in Pillar <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-6-CaseStudy-07-Pillar-ReifyAndDispatch.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S6.mp4"> VIDEO </a></li>
-            </ol>
-
-</section>
-
-        <!-- ================================================================================ -->
-        <section id="module2">
-        <!-- ================================================================================ -->
-            <h2>Module 2: Tests</h2>
-            <p>This module covers an important aspect: testing applications and how to take advantage of test driven design. It shows in particular the power of eXtreme Test Driven Design and how writing tests first and coding in the debugger is empowering the designer.
-            </p>
-
-<b>Teaching objectives</b>
-<ul>
-<li> Understand the structure and benefits of a test and specify a proper automated test</li>
-<li> Identify the benefits and characteristics of a good test suite</li>
-<li> Identify the benefits and apply a Test Driven Development workflow</li>
-<li> Specify and apply the Xtrem Test Driven Development method with Pharo tools</li>
-<li> Create a parameterized test and reuse it with specific values</li>
-</ul>
-
-<b>Sessions</b>
-            <ol class="moduleresources">
-	<li>M2-1 <span class="label label-primary">Lecture</span>Test 101: The minimum you should know <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M2-1-Tests-01-101.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M02_S1_V2.mp4"> VIDEO </a></li>
-	<li>M2-2 <span class="label label-primary">Lecture</span>Tests: Why testing is Important? <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M2-2-Tests-02-Why.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M02_S2_V2.mp4"> VIDEO </a> </li>
-	<li>M2-3 <span class="label label-primary">Lecture</span>Test-Driven Development <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M2-3-Tests-03-TDD.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M02_S3.mp4"> VIDEO </a></li>
-	<li>M2-4 <span class="label label-primary">Lecture</span>Xtreme Test Driven Development: Getting a productivity boost <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M2-4-Tests-04-XTDD.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M02_S4_V2.mp4"> VIDEO </a></li>
-	<li>M2-5 <span class="label label-primary">Lecture</span>Parametrized Tests: Getting more tests out of test cases <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M2-5-Tests-05-ParametrizedTests.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M02_S5.mp4"> VIDEO </a></li>
-            </ol>
-        </section>
-
-
-<section id="module3">
-        <!-- ================================================================================ -->
-        <h2>Module 3: Hooks</h2>
-<p>In this module we will start to look at design patterns. In parallel, we will discuss a key point of object-oriented design which is how to design abstractions that are extensible using hooks. The case study is about going from monolithic to parametrized objects.
-</p>
-
-<b>Teaching objectives</b>
-
-<ul>
-<li> Get exposed to design patterns</li>
-<li> Use hooks to extend code</li>
-<li> Analyze hook and template methods</li>
-<li> Use a stream and avoid creating spurious objects</li>
-<li> Move from a monolithic global design to one that can be parameterized</li>
-</ul>
-
-<b>Sessions</b>
-            <ol class="moduleresources">
-	<li>M3-1 <span class="label label-primary">Lecture</span>An introduction to design patterns <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M3-1-DesignPattern-01-IntroDesignPattern.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M03_S1.mp4"> VIDEO </a></li>
-	<li>M3-2 <span class="label label-primary">Lecture</span>Message Sends are Plans for Reuse<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M3-2-Essence-07-SelfSendsArePlansForReuse.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M03_S2_V2.mp4"> VIDEO </a></li>
-	<li>M3-3 <span class="label label-primary">Lecture</span>Hooks and Template: One of the cornerstones of OOP <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M3-3-DesignPattern-02-HookAndTemplate.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M03_S3_V2.mp4"> VIDEO </a></li>
-	<li>M3-4 <span class="label label-primary">Lecture</span>Using well asString and printString: A Pharo code idiom <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M3-4-Lang-01-Stream.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M03_S4.mp4"> VIDEO </a></li>
-	<li>M3-5 <span class="label label-primary">Lecture</span>Global to parameter <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M3-5-BasicPrinciples-02-FromGlobalToParameter.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M03_S5_V2.mp4"> VIDEO </a></li>
-            </ol>
-        </section>
-
-       <!-- ================================================================================ -->
-       <section id="module4">
-        <!-- ================================================================================ -->
-            <h2>Module 4: Objects: state and behavior</h2>
-            <p>In this module we will focus on basic principle showing for example the difference between data and objects. We will start also to present some design patterns such as Singleton and Decorator.
-            </p>
-
-<b>Teaching objectives</b>
-
-<ul>
-<li>Rethink object API</li>
-<li>Distinguish between an object and a data structure</li>
-<li> Identify the different syntactic forms of global variables</li>
-<li> Identify the disadvantages of fat classes and replace them with class hierarchies and delegation</li>
-<li> Implement the Singleton pattern, with its advantages and disadvantages</li>
-<li> Apply the Decorator design pattern and identify when to use it</li>
-</ul>
-
-<b>Sessions</b>
-            <ol class="moduleresources">
-	<li>M4-1 <span class="label label-primary">Lecture</span>Methods: the elementary unit of reuse<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-1-BasicPrinciples-01-MethodIsReuse.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S1.mp4"> VIDEO </a> </li>
-	<li>M4-2 <span class="label label-primary">Lecture</span>Objects vs. Data - An API perspective studying the class Point<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-2-BasicPrinciples-04-AboutObjectsVSData.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S2.mp4"> VIDEO </a> </li>
-	<li>M4-3 <span class="label label-primary">Lecture</span>About global variables<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-3-Principles-02-AboutGlobalVariables.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S3.mp4"> VIDEO </a> </li>
-	<li>M4-4 <span class="label label-primary">Lecture</span>Fat classes are bad - A large class vs. a class hierarchy<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-4-BasicPrinciples-05-FatClassesAreBad.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S4.mp4"> VIDEO </a> </li>
-	<li>M4-5 <span class="label label-primary">Lecture</span>Singleton: a Highly Misunderstood Pattern<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-5-DesignPattern-06-Singleton.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S5.mp4"> VIDEO </a> </li>
-	<li>M4-6 <span class="label label-primary">Lecture</span>Decorator Design Pattern<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-6-DesignPattern-09-Decorator.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S6.mp4"> VIDEO </a> </li>
-            </ol>
-        </section>
-
-       <!-- ================================================================================ -->
-       <section id="module5">
-        <!-- ================================================================================ -->
-            <h2>Module 5: Elementary design patterns</h2>
-            <p>In this module we will present some important and simple design patterns such as composite or state. We will then propose to compare use versus inheritance a way to understand the forces in presence.
-            </p>
-<b>Teaching objectives</b>
-
-<ul>
-<li>Understand the Composite design pattern and identify when to use it</li>
-<li>Use the State design pattern to design objects with many states, complex transitions</li> between states and operations that depend on each state</li>
-<li>Understand the Command design pattern and identify when to use it</li>
-<li>Use a design pattern in the real world</li>
-<li>Compare inheritance-based and delegation-based designs</li>
-<li>Identify the benefits of using objects to represent complex algos</li>
-<li>Recognize when it is preferable to use objects rather than lexical closures</li>
-<li>Identify the use of NullObject design pattern and the benefit of object state initialization</li>
-<li>Manage methods with a large number of arguments and design fluid APIs</li>
-</ul>
-
-<b>Sessions</b>
-            <ol class="moduleresources">
-	<li>M5-1 <span class="label label-primary">Lecture</span>Composite: a Nice and Common Design Pattern<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-1-DesignPattern-03-Composite.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S1_V2.mp4"> VIDEO </a> </li>
-	<li>M5-2 <span class="label label-primary">Lecture</span>About State Design Pattern<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-2-DesignPattern-11-State.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S2_V2.mp4"> VIDEO </a> </li>
-	<li>M5-3 <span class="label label-primary">Lecture</span>Command Design Pattern: Actions as objects<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-3-DesignPattern-07-Command-Definition.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S3_Partie1_V2.mp4"> VIDEO </a> </li>
-		  <li>M5-3 <span class="label label-primary">Lecture</span>Application of Command Design Pattern<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-3-DesignPattern-07-Command-Application.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M5_S3_partie2_V2.mp4"> VIDEO </a> </li>		
-	<li>M5-4 <span class="label label-primary">Lecture</span>Delegation vs. Inheritance<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-4-BasicPrinciples-06-DelegationVsInheritance.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S4.mp4"> VIDEO </a> </li>
-	<li>M5-5 <span class="label label-primary">Lecture</span>Turning Procedures to Objects<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-5-CaseStudy-01-TurningAProcIntoAnObject.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S5_V2.mp4"> VIDEO </a> </li>
-	<li>M5-6 <span class="label label-primary">Lecture</span>Blocks vs. Objects: Rethinking common abstractions<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-6-Lang-04-BlocksVsObjects.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S6_V2.mp4"> VIDEO </a> </li>
-				
-				 <li>M5-7 <span class="label label-primary">Lecture</span>Avoid Null Checks<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-7-Principles-01-AvoidIsNil.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S7_V2.mp4"> VIDEO </a> </li>
-				 
-				  <li>M5-8 <span class="label label-primary">Lecture</span>About Fluid API<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-8-CaseStudy-02-AboutFluidAPI.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S8.mp4"> VIDEO </a> </li>
-            </ol>
-        </section>
-
-
-       <!-- ================================================================================ -->
-       <section id="module6">
-        <!-- ================================================================================ -->
-            <h2>Module 6: About double dispatch</h2>
-            <p>This module presents the double dispatch mechanism and the Visitor design pattern which is based on it.
-            </p>
-<b>Teaching objectives</b>
-
-<ul>
-<li> Use the power of sending messages to get a more modular design</li>
-<li>Apply Double dispatch to non-symmetrical domains</li>
-<li>Identify the double dispatch mechanisms and use them with a simple example</li>
-<li>Apply the Visitor design pattern and identify when to use it</li>
-<li>Use and implement the possible variations of the Visitor design pattern </li>
-<li>Question the return of values, numbers vs. symbols</li>
-<li>Use the double dispatch mechanisms in more complex cases</li>
-</ul>
-
-
-
-
-
-
-<b>Sessions</b>
-            <ol class="moduleresources">
-	<li>M6-1 <span class="label label-primary">Lecture</span>A double dispatch starter: Stone Paper Scissors<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-1-DoubleDispatch-01-StoneExercise.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S1.mp4"> VIDEO </a> </li>
-	<li>M6-2 <span class="label label-primary">Lecture</span>Double dispatch: Does not have to be symmetrical<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-2-DoubleDispatch-04-NoSymmetrical.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S2.mp4"> VIDEO </a> </li>
-	<li>M6-3 <span class="label label-primary">Lecture</span>a Die + a DieHandle: Practicing dispatch more<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-3-DoubleDispatch-03-Dice.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S3.mp4"> VIDEO </a> </li>
-	<li>M6-4 <span class="label label-primary">Lecture</span>Visitor: Modular and extensible first class actions<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-4-DesignPattern-04-Visitor.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S4.mp4"> VIDEO </a> </li>
-	<li>M6-5 <span class="label label-primary">Lecture</span>Some discussions on Visitor<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-5-DesignPattern-05-VisitorDiscussions.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S5.mp4"> VIDEO </a> </li>
-	<li>M6-6 <span class="label label-primary">Lecture</span>Stone Paper Scissors: The case of results<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-6-DoubleDispatch-05-StoneExercise-AboutResult.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S6.mp4"> VIDEO </a> </li>
-	<li>M6-7 <span class="label label-primary">Lecture</span>Double Dispatch: Adding numbers as a Kata<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-7-DoubleDispatch-AddingNumbers.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S7.mp4"> VIDEO </a> </li>
-            </ol>
-        </section>
-
-       <!-- ================================================================================ -->
-       <section id="module7">
-        <!-- ================================================================================ -->
-            <h2>Module 7: Creation</h2>
-            <p>This module focuses on patterns to create and initialize objects.
-            </p>
-<b>Teaching objectives</b>
-
-<ul>
-<li>Identify the benefit of delaying the initialization of an object until it is needed</li>
-<li>Analyze the impact of the granularity of hooks</li>
-<li>Use a mechanism for specifying extensible class names by default to avoid hardcoding them</li>
-<li>Use the delegation of actions and accumulator concepts</li>
-<li>Use of behavior delegation to avoid programming complex conditions</li>
-<li>Use the Builder design pattern to create complex object graphs</li>
-<li>Identify and use different API design alternatives for Builder Patterns</li>
-<li>Explain the relation between super and lookup when sending a message</li>
-</ul>
-
-<b>Sessions</b>
-            <ol class="moduleresources">
-	<li>M7-1 <span class="label label-primary">Lecture</span>About Null Check: The case of lazy initialization<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-1-Principles-01-LazyInitialization.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S1.mp4"> VIDEO </a> </li>
-	<li>M7-2 <span class="label label-primary">Lecture</span>Customization degree of hooks: Class vs. instance hooks<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-2-Principles-07-ClassHookVsInstanceHook.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S2_V2.mp4"> VIDEO </a> </li>
-	<li>M7-3 <span class="label label-primary">Lecture</span>DieHandle new vs. self class new: When classes are first class citizen<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-3-Principles-06-selfVSClassDispatch.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S3.mp4"> VIDEO </a> </li>
-	<li>M7-4 <span class="label label-primary">Lecture</span>Delegation of actions and accumulator: Form validation as an example<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-4-CaseStudy-03-UsingAnAccumulator-FormValidation.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S4.mp4"> VIDEO </a> </li>
-	<li>M7-5 <span class="label label-primary">Lecture</span>Behavior delegation at work: The case of the class printer<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-5-CaseStudy-04-PowerOfDelegationClassDefinitionPrinter.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S5_V2.mp4"> VIDEO </a> </li>
-	<li>M7-6 <span class="label label-primary">Lecture</span>Builder Design Pattern: Encapsulating object creation<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-6-DesignPattern-08-Builder.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S6_V2.mp4"> VIDEO </a> </li>
-	<li>M7-7 <span class="label label-primary">Lecture</span>Builder API variations<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-7-Lang-05-AboutBuilder.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S7_V2.mp4"> VIDEO </a> </li>
-	<li>M7-8 <span class="label label-primary">Lecture</span>Did You Really Understand Super?<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-8-Essence-06-DidYouUnderstandSuper.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S8.mp4"> VIDEO </a> </li>
-            </ol>
-        </section>
-
-       <!-- ================================================================================ -->
-       <section id="module8">
-        <!-- ================================================================================ -->
-		
-<b>Sessions</b>		
-            <h2>Module 8: Sharing</h2>
-            <p>This module presents different techniques and design patterns to share objects.
-            </p>
-
-<b>Teaching objectives</b>
-
-<ul>
-<li> Use a shared variable and analyze its impact on the instances of a hierarchy</li>
-<li> Misunderstood resource sharing with instance-specific information to extend the spectrum of object sharing</li>
-<li>Group and share constants between multiple classes</li>
-<li> Customize hooks to define and reuse magic literals to avoid hardcoding them in the code</li>
-<li> Identify the implementation compromises for the Flyweight pattern</li>
-<li> Represent attributes that are common to a type of objects in a more flexible way</li>
-<li> Share objects while allowing properties to be modified</li>
-</ul>
-            <ol class="moduleresources">
-	<li>M8-1 <span class="label label-primary">Lecture</span>Shared variables: A Pharo code idiom<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-1-Lang-02-SharedVariables.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S1.mp4"> VIDEO </a> </li>
-	<li>M8-2 <span class="label label-primary">Lecture</span>Sharing with instance specific possibilities<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-2-Principles-08-Sharing.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S2_V2.mp4"> VIDEO </a> </li>
-	<li>M8-3 <span class="label label-primary">Lecture</span>Shared Pools: Static sharing between hierarchies<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-3-Lang-03-SharedPools.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S3.mp4"> VIDEO </a> </li>
-	<li>M8-4 <span class="label label-primary">Lecture</span>About magic literals<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-4-Essence-08-AboutMagicNumbers.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S4_V2.mp4"> VIDEO </a> </li>
-	<li>M8-5 <span class="label label-primary">Lecture</span>Flyweight<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-5-DesignPattern-10-Flyweigth.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S5_V2.mp4"> VIDEO </a> </li>
-	<li>M8-6 <span class="label label-primary">Lecture</span>TypeObject<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-6-DesignPattern-12-TypeObject.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S6.mp4"> VIDEO </a> </li>
-	<li>M8-7 <span class="label label-primary">Lecture</span>A variation on sharing<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-7-Sharing-Alternate.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S7.mp4"> VIDEO </a> </li>
-            </ol>
-        </section>
-
-       <!-- ================================================================================ -->
-       <section id="module9">
-        <!-- ================================================================================ -->
-            <h2>Module 9: About Inversion of control / Registration</h2>
-            <p>In this module, we present the law of demeter and different techniques to achieve Inversion of control.
-            </p>
-
-<b>Teaching objectives</b>
-
-<ul>
-<li> Reduce the impact of change in complex systems by following Demeter's Law</li>
-<li> Use class methods to create extensible designs</li>
-<li> Use an explicit registration mechanism and explain its benefits</li>
-<li> Identify a monolithic architecture and propose different solutions to transform it into a more modular one</li>
-<li> Analyze an existing design and remodel it to make it modular using message dispatch</li>
-<li> Understand object programming as opposed to a design approach that focuses more on classes than on objects</li>
-</ul>
-<b>Sessions</b>
-            <ol class="moduleresources">
-	<li>M9-1 <span class="label label-primary">Lecture</span>About coupling and encapsulation<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-1-Principles-04-LawOfDemeter.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S1_V2.mp4"> VIDEO </a> </li>
-	<li>M9-2 <span class="label label-primary">Lecture</span>Class Methods At Work<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-2-Principles-02-AboutClassMethodsAndRegistration.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S2.mp4"> VIDEO </a> </li>
-	<li>M9-3 <span class="label label-primary">Lecture</span>About Registration: When class method-based registration is too much<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-3-Principles-03-AboutRegistration.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S3_V2.mp4"> VIDEO </a> </li>
-	<li>M9-4 <span class="label label-primary">Lecture</span>Application settings: From a monolithic to a modular architecture<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-4-CaseStudy-06-LayeredSettingsArchitecture.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S4_V2.mp4"> VIDEO </a> </li>
-	<li>M9-5 <span class="label label-primary">Lecture</span>Learning from a Sokoban implementation<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-5-CaseStudy-05-Sokoban-Analysis.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S5_V2.mp4"> VIDEO </a> </li>
-	<li>M9-6 <span class="label label-primary">Lecture</span>Class vs. Object-Oriented Programming<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-6-ClassVSObjectProgramming.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S6_V2.mp4"> VIDEO </a> </li>
-            </ol>
-        </section>
-
-       <!-- ================================================================================ -->
-       <section id="module10">
-        <!-- ================================================================================ -->
-            <h2>Module 10: About Types</h2>
-            <p>This modules focuses on typing and their relation with object-oriented design.
-            </p>
-
-<b>Teaching objectives</b>
-
-<ul>
-<li> Disprove the common misconception that instance variables must be private</li>
-<li> Explain the difference between Subclasses and Subtypes</li>
-<li> Describe the relationship between sending a message associated with the selection of lookup methods and static types</li>
-<li> Explain the need for interfaces in statistically-typed languages and their uselessness in dynamically-typed languages</li>
-<li> Explain the pros and cons of using defensive checks in programming</li>
-</ul>
-
-<b>Sessions</b>
-            <ol class="moduleresources">
-	<li>M10-1 <span class="label label-primary">Lecture</span>The two interfaces: In presence of delta programming<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M10-1-Principles-12-DualInterfaces.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M10_S1.mp4"> VIDEO </a> </li>
-	<li>M10-2 <span class="label label-primary">Lecture</span>Subclassing vs. Subtyping<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M10-2-Principles-09-SubtypingVsSubclassing.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M10_S2_V2.mp4"> VIDEO </a> </li>
-	<li>M10-3 <span class="label label-primary">Lecture</span>About type and method lookup<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M10-3-Principles-10-DynamicStaticType.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M10_S3.mp4"> VIDEO </a> </li>
-	<li>M10-4 <span class="label label-primary">Lecture</span>Polymorphic objects: Support for software evolution<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M10-4-Principles-11-PolymorphismSupportEvolution.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M10_S4_V3.mp4"> VIDEO </a> </li>
-	<li>M10-5 <span class="label label-primary">Lecture</span>About defensive programming<a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M10-5-Principles-05-AboutDefensiveProgramming.pdf"> PDF </a> / <a href="http://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M10_S5.mp4"> VIDEO </a> </li>
-            </ol>
-        </section>
-
-        <section id="resources">
-            <h2>Get started</h2>
-	<h3>Install Pharo </h3>
-            <p>Download and install the <a class="btn download" href="http://pharo.org/download">Pharo Launcher</a> for your OS</p>
-
-            <h3>External resources</h3>
-            <p>
-	You can find free and online resources in the <a href="https://www.pharo.org/documentation">Documentation</a> page. 
-	 
-			<p> We recommend the Updated Pharo by Example book, the Pharo cheat-sheet, and the new book Learning Object-Oriented Programming, Design and
-	TDD with Pharo on <a href="http://books.pharo.org/">http://books.pharo.org</a>
-            </p>
-	  <p>   <a href="https://pharo.org/community">Join the discord server of the community</a> There is newbie help channel and people are friendly.
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section id="credits">
-            <h2>Authors</h2>
-            <div class="row">
-
-	<div class="col-xs-3">
-	    <!-- <section class="bio"> -->
-	    <section class="well bio">
-	        <img alt="Stéphane Ducasse" src="pictures/sducasse.png" class="teacher" />
-	        <h3>Stéphane Ducasse</h3>
-	        <p>Stéphane Ducasse is directeur de
-	            recherche at Inria. He leads the RMoD
-	            team. He is expert in two domains:
-	            object-oriented language design and
-	            reengineering. His works on traits
-	            have been introduced in AmbientTalk,
-	            Slate, Pharo, Perl-6, PHP 5.4 and
-	            Squeak. They have also
-	            influenced JavaScript, Scala and
-	            Fortress. Stéphane is also expert on
-	            software quality, program
-	            understanding, program visualisations,
-	            reengineering and metamodeling. He is
-	            one of the developers of Pharo. He is
-	            also one of the developers of Moose,
-	            an open-source software analysis
-	            platform. He created Synectique a
-	            company building dedicated tools for
-	            advanced software analysis. Stéphane
-	            wrote several books on programming
-	            learning and other topics such as web
-	            programming.</p>
-	    </section>
-	</div>
-	<div class="col-xs-3">
-	    <section class="well bio">
-	        <img alt="Luc Fabresse" src="pictures/lfabresse.png" class="teacher" />
-	        <h3>Luc Fabresse</h3>
-	        <p>Luc Fabresse is currently professor in computer science at IMT Nord Europe.
-	        His researches focus on dynamic and reflective languages such as Pharo to better support programming in the context of mobile robotics and IoT.
-	        It involves deployment, code update, memory management and bootstrapping.
-	        He also works on fleet of collaborating mobile robots involving challenges such as: localization, navigation and distributed coordination.
-	        Luc's long-term vision is to be able to use Jedi mind trick on mobile robots ;-)
-	        Meanwhile, Luc gives many computer science lectures, co-organizes events (technical days, conferences, ...), promotes Smalltalk (ESUG board member) and participates to its open-source implementation Pharo.</p>
-	    </section>
-	</div> <!-- column -->
-	<div class="col-xs-3">
-	    <section class="well bio">
-	        <img alt="Guillermo Polito" src="pictures/gpolito.jpg" class="teacher" />
-	        <h3>Guillermo Polito</h3>
-	        <p>Guille Polito is a permanent researcher at Inria of the University of Lille, within the EVREF team. Guille’s main research interests are programming language implementations, Virtual machines, testing, programming tools, and modular systems.  He has more than 15 years in teaching advanced OOP.
-</p>
-	    </section>
-	</div> <!-- column -->
-	<div class="col-xs-3">
-	    <section class="well bio">
-	        <img alt="Pablo Tesone" src="pictures/ptesone.jpg" class="teacher" />
-	        <h3>Pablo Tesone</h3>
-	        <p>Pablo Tesone is Pharo consortium engineer. He holds a PhD in Computer Science from the University of Lille. Prior to that, Pablo was during 10 years an engineer in large corporates. Pablo has a large spectrum of skills ranging from low-level assembly to high-level reflective systems. He is one of the engineers behind the Pharo Virtual machines. He is the father of stateful traits as available in Pharo.
-He has more than 15 years in teaching advanced OOP.
-</p>
-	    </section>
-	</div> <!-- column -->
-            </div> <!-- row -->
-        </section>
-
-        <!-- Authors,Sponsors -->
-        <section>
-            <h2>Partners</h2>
-            <div class="partners-logos">
-
-	<a href="http://www.inria.fr/" target="_blank">
-	    <img alt="logo inria recherche" src="pictures/logo-inria.jpeg" height="80">
-	</a>
-	<a href="http://www.univ-lille.fr/" target="_blank">
-	    <img alt="logo Université de Lille" src="pictures/universite-lille.png" height="90">
-	</a>
-	<a href="http://www.imt-nord-europe.fr/" target="_blank">
-	    <img alt="logo IMT Nord Europe" src="pictures/logo-IMT.jpg" height="100">
-	</a>
-
-	<a href="http://www.unit.eu/" target="_blank">
-	    <img alt="logo unit" src="pictures/unit.png" height="80">
-	</a>
-            </div> <!-- partners-logos -->
-        </section>
-        <!-- /Authors,Sponsors -->
-
-        <footer class="text-center">
-            <p>This webpage is hosted on
-	<a href="https://github.com/pharo-mooc/AdvancedOODesignMOOC-website">Github</a>.</p>
-        </footer>
+        <ul class="facts">
+          <li>10 modules</li>
+          <li>64 lectures</li>
+          <li>Self-paced</li>
+          <li>Quizzes &amp; Open Badge</li>
+          <li>Language-independent concepts</li>
+        </ul>
+      </div>
+      <video controls preload="metadata" poster="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/TeaserFront.jpg" width="640" height="360" aria-label="Teaser of the Advanced Object-Oriented Design MOOC">
+        <source src="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/TeaserAOODDMOOC.mp4" type="video/mp4">
+      </video>
     </div>
+  </section>
 
-    <script src="assets/jquery/jquery.min.js"></script>
-    <script src="assets/bootstrap/bootstrap.min.js"></script>
+
+  <section id="enroll" class="soft">
+    <div class="wrap">
+      <div class="card enroll">
+        <div>
+          <h2>Follow the MOOC on France Université Numérique</h2>
+          <p>The MOOC is <strong>self-paced</strong>: register on FUN and start at any time. The course is in English.</p>
+          <ul>
+            <li><strong>Quizzes</strong> let you check that your understanding of each lecture is correct.</li>
+            <li>An <strong>Open Badge</strong> is issued on request to learners who obtain at least 60% correct answers on the quizzes.</li>
+            <li>All slides and videos are also freely available below, and as a <a href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/">full archive</a>.</li>
+          </ul>
+          <p>Questions? Join the <a href="https://pharo.org/community">Pharo Discord</a>: there is a newbie help channel and people are friendly.</p>
+        </div>
+        <a class="btn" href="https://www.fun-mooc.fr/en/courses/advanced-object-oriented-design-and-development-with-pharo/">Enroll on FUN</a>
+      </div>
+    </div>
+  </section>
+  <section id="about-course">
+    <div class="wrap">
+      <h2>About this MOOC</h2>
+      <p class="lead">You will get to know and understand the key mechanisms and the essence of object-oriented design.
+      Whether you are a beginner or an expert, we are sure that you will not develop the same way after following
+      this unique lecture, built on more than 60 years of combined experience teaching object-oriented design.</p>
+      <div class="grid">
+        <div class="card"><h3>Language independent</h3><p>Pharo is the pedagogical vehicle, but every concept applies to any object-oriented language.</p></div>
+        <div class="card"><h3>Why Pharo?</h3><p>A pure object-oriented language with immediate feedback on live objects: <em>the perfect environment to teach deep object-oriented programming</em>.</p></div>
+        <div class="card"><h3>Design exercises</h3><p>From little interpreters to games and quizzes, collected in a companion exercise book.</p></div>
+        <div class="card"><h3>Next level</h3><p>The <a href="https://mooc.pharo.org">Pharo MOOC</a> is <strong>not</strong> a requirement, but if you liked it, this MOOC brings you to the next level ;-)</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonies" class="soft">
+    <div class="wrap">
+      <h2>What learners say</h2>
+      <div class="quotes">
+        <blockquote>I love this course so much. I remember how difficult it was to understand OOD concepts in the early 2000s. There were a lot of aphorisms flowing around, but when I asked the people stating them to explain it, no one really did. It is so satisfying to see lecture after lecture explaining those object-oriented principles while refactoring examples. <em>This is the course I wanted 24 years ago.</em> So happy that it exists today.<cite>— bambooer</cite></blockquote>
+        <blockquote>Hi, thank you for the excellent MOOC. I just completed Module 1. <em>The quizzes really help.</em> I am going to say this a lot. I am warning you. <em>What a great course this is.</em> The lectures are solid. I am working through the first exercise, and I have been learning so much and consolidating the information from the lectures along with practicing pharo. I believe this course will be my model whenever I write training in the future.<cite>— stfan10</cite></blockquote>
+        <blockquote>In my opinion, <em>this MOOC is a must-learn for any developer using Object-Oriented Programming</em>. It teaches the essential concepts common to most OOP languages in a concise and well-paced way. The choice of Pharo as an illustrative language definitely felt appropriate, and was never an obstacle to understanding the content of the course. I would definitely recommend completing the companion exercises, whether in Pharo or your OOP language of choice.</blockquote>
+        <blockquote><em>High-level course stimulate your brain</em> and gives you lots of inputs to go on learning more and more...</blockquote>
+        <blockquote>The knowledge, syllabus and pacing are excellent. Recording is of good quality (minus the occasional typos), even at an accelerated speed (I used 1.5x). Thank you so much for giving me the rationales <em>to finally understand the OOP paradigm</em> after years of working with it using heuristics and half-understood notions. <em>It feels like a new beginning for me.</em></blockquote>
+        <blockquote><em>Modules 1-4 should be taught to and understood by anyone programming with an OOP language.</em> I appreciate that these pieces of invaluable knowledge keep being repeated in the other modules.</blockquote>
+        <blockquote>My most sincere compliments. It is rare to find a course that is <em>so specialized and practical at the same time</em>.</blockquote>
+      </div>
+    </div>
+  </section>
+  <section id="book">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <h2>Companion exercise book</h2>
+          <p>We designed a set of exercises to train yourself on object-oriented design, packaged as a book.
+          Do them in Pharo or in your object-oriented language of choice.</p>
+          <p><a class="btn" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/2024-04-01-CompanionExercise.pdf">Download the book (PDF)</a></p>
+          <p>Found a mistake? Please open an issue on
+          <a href="https://github.com/SquareBracketAssociates/booklet-AdvancedMicroProjects">GitHub</a>: it helps us improve and publish the book.</p>
+          <h3>MOOC map</h3>
+          <p>The map shows the modules and how they relate. See the MOOC overview as
+          <a href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M0-0-AboutTheMooc.pdf">slides</a> or <a href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M00_S0.mp4">video</a>.</p>
+        </div>
+        <a href="pictures/Map.jpg"><img class="map" src="pictures/Map.jpg" alt="Map of the MOOC modules" width="500" height="500" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+  <section id="install" class="soft">
+    <div class="wrap">
+      <h2>Get started</h2>
+      <ol class="steps">
+        <li>Download and install the <a href="https://pharo.org/download">Pharo Launcher</a> for your OS, and create an image of the latest Pharo version.</li>
+        <li>New to Pharo? Do the optional <a href="#module0">warm-up module</a>, and execute <code>ProfStef new go</code> in Pharo for an interactive tutorial.</li>
+        <li>Follow the modules in order: each builds on the previous ones.</li>
+      </ol>
+    </div>
+  </section>
+  <section id="modules">
+    <div class="wrap">
+      <h2>Modules</h2>
+      <p class="lead">64 lectures in 10 modules, plus an optional warm-up. Each lecture comes with its slides and its video.
+      All slides are also available as a <a href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides.zip">single zip</a>.</p>
+      <nav class="week-nav" aria-label="Modules">
+        <a href="#module0">M0 · Little Warm up with Pharo</a>
+        <a href="#module1">M1 · Understanding messages</a>
+        <a href="#module2">M2 · Tests</a>
+        <a href="#module3">M3 · Hooks</a>
+        <a href="#module4">M4 · Objects: state and behavior</a>
+        <a href="#module5">M5 · Elementary design patterns</a>
+        <a href="#module6">M6 · About double dispatch</a>
+        <a href="#module7">M7 · Creation</a>
+        <a href="#module8">M8 · Sharing</a>
+        <a href="#module9">M9 · About Inversion of control / Registration</a>
+        <a href="#module10">M10 · About Types</a>
+      </nav>
+      <article class="week" id="module0">
+        <h3><small>Optional warm-up</small>Little Warm up with Pharo</h3>
+        <p>This first optional module presents some lectures from the Pharo Mooc. It helps the reader who wants to follow the syntax used in the slides and do the exercises to learn fast Pharo. We suggest to execute the expression ProfStef new go and perform the proposed exercises.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (2)</summary>
+          <ul>
+            <li>Pharo syntax</li>
+            <li>Pharo object model</li>
+          </ul>
+        </details>
+        <h4>Core elements <span>— The following short videos explain the full language.</span></h4>
+        <ul class="items">
+          <li><span class="kind k-lecture">M0-1</span><span class="title">Pharo Object Model in a Nutshell</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/C019-W1S04-PharoModelInaNushell.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week1/C019SD-W1-S4-EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-2</span><span class="title">Pharo Syntax in a Nutshell</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/C019-W1S05-PharoSyntaxInANutshell.pdf">Slides</a> <a class="err" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/C019-W1S05-PharoSyntaxInANutshell.pillar.erratum">Erratum</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week1/C019SD-W1-S5-EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-3</span><span class="title">Class and Method Definitions</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week1/C019-W1S06-ClassAndMethodDefinition.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week1/C019SD-W1-S6--EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-4</span><span class="title">Understanding Messages</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S01-Messages.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S1-EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-5</span><span class="title">Messages for Java Programmers</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S02-Messages-ForTheJavaProgrammers.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S2-EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-6</span><span class="title">Messages: Composition and Precedence</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S03-Messages-Precedence.pdf">Slides</a> <a class="err" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S03-Messages-Precedence.pillar.erratum">Erratum</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S3-EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-7</span><span class="title">Understanding Messages: Sequence and Cascade</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S04-Messages-Sequence.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S4-EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-8</span><span class="title">Introduction to Blocks</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S06-Blocks.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S6-EN-V1.mp4">Video</a></span></li>
+        </ul>
+        <h4>Extras <span>— The following short videos explain some extra points.</span></h4>
+        <ul class="items">
+          <li><span class="kind k-lecture">M0-9</span><span class="title">Loops</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S07-Loops.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S7-EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-10</span><span class="title">Yourself</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S10-Yourself.pdf">Slides</a> <a class="err" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S10-Yourself.pillar.erratum">Erratum</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S10-EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-11</span><span class="title">Class methods</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week3/C019-W3S06-BasicClassMethods.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week3/C019SD-W3-S6-EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-12</span><span class="title">Parenthesis Vs Square Brackets</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week2/C019-W2S09-ParenthesisVsSquareBrackets.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week2/C019SD-W2-S9-EN-V1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M0-13</span><span class="title">Iterators</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week3/C019-W3S09-Iterators.pdf">Slides</a> <a class="err" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC/Week3/C019-W3S09-Iterators.pillar.erratum">Erratum</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/MOOC/PharoMOOC-Videos/EN/Week3/C019SD-W3-S9-EN-V1.mp4">Video</a></span></li>
+        </ul>
+      </article>
+      <article class="week" id="module1">
+        <h3><small>Module 1</small>Understanding messages</h3>
+        <p>This first module revisits elementary concepts around self, super, and the power of dispatching to dedicated objects. The case study shows how to go from a monolithic design with one kind of format to the handling of optional different formats in the Pillar document compilation chain.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (6)</summary>
+          <ul>
+            <li>Completely rethink what it means to send a message</li>
+            <li>Explain that sending a message is making a choice based on classes</li>
+            <li>Distinguish between static and dynamic approaches to inheritance</li>
+            <li>Understand what is to send a message and how lookup works</li>
+            <li>Understand deeply what super is</li>
+            <li>Apply the mechanics of a transformation that makes implicit behavior explicit</li>
+          </ul>
+        </details>
+        <ul class="items">
+          <li><span class="kind k-lecture">M1-1</span><span class="title">Essence of Dispatch: Taking Pharo Booleans as Example</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-1-Essence-01-NotExample.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M1-2</span><span class="title">Essence of Dispatch: Let the receiver decide</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-2-Essence-02-Dispatch.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S2_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M1-3</span><span class="title">Inheritance Basics</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-3-Essence-03-Inheritance-Basic.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S3.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M1-4</span><span class="title">Inheritance and Lookup: Self - Understand lookup once for all</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-4-Essence-04-Self.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S4.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M1-5</span><span class="title">About super</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-5-Essence-05-Super.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S5.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M1-6</span><span class="title">Reification and delegation - A case study: Microdown in Pillar</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M1-6-CaseStudy-07-Pillar-ReifyAndDispatch.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M01_S6.mp4">Video</a></span></li>
+        </ul>
+      </article>
+      <article class="week" id="module2">
+        <h3><small>Module 2</small>Tests</h3>
+        <p>This module covers an important aspect: testing applications and how to take advantage of test driven design. It shows in particular the power of eXtreme Test Driven Design and how writing tests first and coding in the debugger is empowering the designer.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (5)</summary>
+          <ul>
+            <li>Understand the structure and benefits of a test and specify a proper automated test</li>
+            <li>Identify the benefits and characteristics of a good test suite</li>
+            <li>Identify the benefits and apply a Test Driven Development workflow</li>
+            <li>Specify and apply the Xtrem Test Driven Development method with Pharo tools</li>
+            <li>Create a parameterized test and reuse it with specific values</li>
+          </ul>
+        </details>
+        <ul class="items">
+          <li><span class="kind k-lecture">M2-1</span><span class="title">Test 101: The minimum you should know</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M2-1-Tests-01-101.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M02_S1_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M2-2</span><span class="title">Tests: Why testing is Important?</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M2-2-Tests-02-Why.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M02_S2_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M2-3</span><span class="title">Test-Driven Development</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M2-3-Tests-03-TDD.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M02_S3.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M2-4</span><span class="title">Xtreme Test Driven Development: Getting a productivity boost</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M2-4-Tests-04-XTDD.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M02_S4_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M2-5</span><span class="title">Parametrized Tests: Getting more tests out of test cases</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M2-5-Tests-05-ParametrizedTests.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M02_S5.mp4">Video</a></span></li>
+        </ul>
+      </article>
+      <article class="week" id="module3">
+        <h3><small>Module 3</small>Hooks</h3>
+        <p>In this module we will start to look at design patterns. In parallel, we will discuss a key point of object-oriented design which is how to design abstractions that are extensible using hooks. The case study is about going from monolithic to parametrized objects.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (5)</summary>
+          <ul>
+            <li>Get exposed to design patterns</li>
+            <li>Use hooks to extend code</li>
+            <li>Analyze hook and template methods</li>
+            <li>Use a stream and avoid creating spurious objects</li>
+            <li>Move from a monolithic global design to one that can be parameterized</li>
+          </ul>
+        </details>
+        <ul class="items">
+          <li><span class="kind k-lecture">M3-1</span><span class="title">An introduction to design patterns</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M3-1-DesignPattern-01-IntroDesignPattern.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M03_S1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M3-2</span><span class="title">Message Sends are Plans for Reuse</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M3-2-Essence-07-SelfSendsArePlansForReuse.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M03_S2_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M3-3</span><span class="title">Hooks and Template: One of the cornerstones of OOP</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M3-3-DesignPattern-02-HookAndTemplate.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M03_S3_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M3-4</span><span class="title">Using well asString and printString: A Pharo code idiom</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M3-4-Lang-01-Stream.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M03_S4.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M3-5</span><span class="title">Global to parameter</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M3-5-BasicPrinciples-02-FromGlobalToParameter.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M03_S5_V2.mp4">Video</a></span></li>
+        </ul>
+      </article>
+      <article class="week" id="module4">
+        <h3><small>Module 4</small>Objects: state and behavior</h3>
+        <p>In this module we will focus on basic principle showing for example the difference between data and objects. We will start also to present some design patterns such as Singleton and Decorator.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (6)</summary>
+          <ul>
+            <li>Rethink object API</li>
+            <li>Distinguish between an object and a data structure</li>
+            <li>Identify the different syntactic forms of global variables</li>
+            <li>Identify the disadvantages of fat classes and replace them with class hierarchies and delegation</li>
+            <li>Implement the Singleton pattern, with its advantages and disadvantages</li>
+            <li>Apply the Decorator design pattern and identify when to use it</li>
+          </ul>
+        </details>
+        <ul class="items">
+          <li><span class="kind k-lecture">M4-1</span><span class="title">Methods: the elementary unit of reuse</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-1-BasicPrinciples-01-MethodIsReuse.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M4-2</span><span class="title">Objects vs. Data - An API perspective studying the class Point</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-2-BasicPrinciples-04-AboutObjectsVSData.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M4-3</span><span class="title">About global variables</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-3-Principles-02-AboutGlobalVariables.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S3.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M4-4</span><span class="title">Fat classes are bad - A large class vs. a class hierarchy</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-4-BasicPrinciples-05-FatClassesAreBad.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S4.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M4-5</span><span class="title">Singleton: a Highly Misunderstood Pattern</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-5-DesignPattern-06-Singleton.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S5.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M4-6</span><span class="title">Decorator Design Pattern</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M4-6-DesignPattern-09-Decorator.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M04_S6.mp4">Video</a></span></li>
+        </ul>
+      </article>
+      <article class="week" id="module5">
+        <h3><small>Module 5</small>Elementary design patterns</h3>
+        <p>In this module we will present some important and simple design patterns such as composite or state. We will then propose to compare use versus inheritance a way to understand the forces in presence.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (9)</summary>
+          <ul>
+            <li>Understand the Composite design pattern and identify when to use it</li>
+            <li>Use the State design pattern to design objects with many states, complex transitions between states and operations that depend on each state</li>
+            <li>Understand the Command design pattern and identify when to use it</li>
+            <li>Use a design pattern in the real world</li>
+            <li>Compare inheritance-based and delegation-based designs</li>
+            <li>Identify the benefits of using objects to represent complex algos</li>
+            <li>Recognize when it is preferable to use objects rather than lexical closures</li>
+            <li>Identify the use of NullObject design pattern and the benefit of object state initialization</li>
+            <li>Manage methods with a large number of arguments and design fluid APIs</li>
+          </ul>
+        </details>
+        <ul class="items">
+          <li><span class="kind k-lecture">M5-1</span><span class="title">Composite: a Nice and Common Design Pattern</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-1-DesignPattern-03-Composite.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S1_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M5-2</span><span class="title">About State Design Pattern</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-2-DesignPattern-11-State.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S2_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M5-3</span><span class="title">Command Design Pattern: Actions as objects</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-3-DesignPattern-07-Command-Definition.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S3_Partie1_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M5-3</span><span class="title">Application of Command Design Pattern</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-3-DesignPattern-07-Command-Application.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S3_partie2_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M5-4</span><span class="title">Delegation vs. Inheritance</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-4-BasicPrinciples-06-DelegationVsInheritance.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S4.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M5-5</span><span class="title">Turning Procedures to Objects</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-5-CaseStudy-01-TurningAProcIntoAnObject.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S5_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M5-6</span><span class="title">Blocks vs. Objects: Rethinking common abstractions</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-6-Lang-04-BlocksVsObjects.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S6_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M5-7</span><span class="title">Avoid Null Checks</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-7-Principles-01-AvoidIsNil.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S7_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M5-8</span><span class="title">About Fluid API</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M5-8-CaseStudy-02-AboutFluidAPI.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M05_S8.mp4">Video</a></span></li>
+        </ul>
+      </article>
+      <article class="week" id="module6">
+        <h3><small>Module 6</small>About double dispatch</h3>
+        <p>This module presents the double dispatch mechanism and the Visitor design pattern which is based on it.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (7)</summary>
+          <ul>
+            <li>Use the power of sending messages to get a more modular design</li>
+            <li>Apply Double dispatch to non-symmetrical domains</li>
+            <li>Identify the double dispatch mechanisms and use them with a simple example</li>
+            <li>Apply the Visitor design pattern and identify when to use it</li>
+            <li>Use and implement the possible variations of the Visitor design pattern</li>
+            <li>Question the return of values, numbers vs. symbols</li>
+            <li>Use the double dispatch mechanisms in more complex cases</li>
+          </ul>
+        </details>
+        <ul class="items">
+          <li><span class="kind k-lecture">M6-1</span><span class="title">A double dispatch starter: Stone Paper Scissors</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-1-DoubleDispatch-01-StoneExercise.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M6-2</span><span class="title">Double dispatch: Does not have to be symmetrical</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-2-DoubleDispatch-04-NoSymmetrical.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M6-3</span><span class="title">a Die + a DieHandle: Practicing dispatch more</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-3-DoubleDispatch-03-Dice.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S3.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M6-4</span><span class="title">Visitor: Modular and extensible first class actions</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-4-DesignPattern-04-Visitor.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S4.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M6-5</span><span class="title">Some discussions on Visitor</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-5-DesignPattern-05-VisitorDiscussions.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S5.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M6-6</span><span class="title">Stone Paper Scissors: The case of results</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-6-DoubleDispatch-05-StoneExercise-AboutResult.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S6.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M6-7</span><span class="title">Double Dispatch: Adding numbers as a Kata</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M6-7-DoubleDispatch-AddingNumbers.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M06_S7.mp4">Video</a></span></li>
+        </ul>
+      </article>
+      <article class="week" id="module7">
+        <h3><small>Module 7</small>Creation</h3>
+        <p>This module focuses on patterns to create and initialize objects.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (8)</summary>
+          <ul>
+            <li>Identify the benefit of delaying the initialization of an object until it is needed</li>
+            <li>Analyze the impact of the granularity of hooks</li>
+            <li>Use a mechanism for specifying extensible class names by default to avoid hardcoding them</li>
+            <li>Use the delegation of actions and accumulator concepts</li>
+            <li>Use of behavior delegation to avoid programming complex conditions</li>
+            <li>Use the Builder design pattern to create complex object graphs</li>
+            <li>Identify and use different API design alternatives for Builder Patterns</li>
+            <li>Explain the relation between super and lookup when sending a message</li>
+          </ul>
+        </details>
+        <ul class="items">
+          <li><span class="kind k-lecture">M7-1</span><span class="title">About Null Check: The case of lazy initialization</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-1-Principles-01-LazyInitialization.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M7-2</span><span class="title">Customization degree of hooks: Class vs. instance hooks</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-2-Principles-07-ClassHookVsInstanceHook.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S2_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M7-3</span><span class="title">DieHandle new vs. self class new: When classes are first class citizen</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-3-Principles-06-selfVSClassDispatch.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S3.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M7-4</span><span class="title">Delegation of actions and accumulator: Form validation as an example</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-4-CaseStudy-03-UsingAnAccumulator-FormValidation.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S4.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M7-5</span><span class="title">Behavior delegation at work: The case of the class printer</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-5-CaseStudy-04-PowerOfDelegationClassDefinitionPrinter.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S5_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M7-6</span><span class="title">Builder Design Pattern: Encapsulating object creation</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-6-DesignPattern-08-Builder.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S6_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M7-7</span><span class="title">Builder API variations</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-7-Lang-05-AboutBuilder.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S7_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M7-8</span><span class="title">Did You Really Understand Super?</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M7-8-Essence-06-DidYouUnderstandSuper.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M07_S8.mp4">Video</a></span></li>
+        </ul>
+      </article>
+      <article class="week" id="module8">
+        <h3><small>Module 8</small>Sharing</h3>
+        <p>This module presents different techniques and design patterns to share objects.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (7)</summary>
+          <ul>
+            <li>Use a shared variable and analyze its impact on the instances of a hierarchy</li>
+            <li>Misunderstood resource sharing with instance-specific information to extend the spectrum of object sharing</li>
+            <li>Group and share constants between multiple classes</li>
+            <li>Customize hooks to define and reuse magic literals to avoid hardcoding them in the code</li>
+            <li>Identify the implementation compromises for the Flyweight pattern</li>
+            <li>Represent attributes that are common to a type of objects in a more flexible way</li>
+            <li>Share objects while allowing properties to be modified</li>
+          </ul>
+        </details>
+        <ul class="items">
+          <li><span class="kind k-lecture">M8-1</span><span class="title">Shared variables: A Pharo code idiom</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-1-Lang-02-SharedVariables.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M8-2</span><span class="title">Sharing with instance specific possibilities</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-2-Principles-08-Sharing.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S2_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M8-3</span><span class="title">Shared Pools: Static sharing between hierarchies</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-3-Lang-03-SharedPools.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S3.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M8-4</span><span class="title">About magic literals</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-4-Essence-08-AboutMagicNumbers.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S4_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M8-5</span><span class="title">Flyweight</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-5-DesignPattern-10-Flyweigth.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S5_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M8-6</span><span class="title">TypeObject</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-6-DesignPattern-12-TypeObject.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S6.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M8-7</span><span class="title">A variation on sharing</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M8-7-Sharing-Alternate.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M08_S7.mp4">Video</a></span></li>
+        </ul>
+      </article>
+      <article class="week" id="module9">
+        <h3><small>Module 9</small>About Inversion of control / Registration</h3>
+        <p>In this module, we present the law of demeter and different techniques to achieve Inversion of control.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (6)</summary>
+          <ul>
+            <li>Reduce the impact of change in complex systems by following Demeter's Law</li>
+            <li>Use class methods to create extensible designs</li>
+            <li>Use an explicit registration mechanism and explain its benefits</li>
+            <li>Identify a monolithic architecture and propose different solutions to transform it into a more modular one</li>
+            <li>Analyze an existing design and remodel it to make it modular using message dispatch</li>
+            <li>Understand object programming as opposed to a design approach that focuses more on classes than on objects</li>
+          </ul>
+        </details>
+        <ul class="items">
+          <li><span class="kind k-lecture">M9-1</span><span class="title">About coupling and encapsulation</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-1-Principles-04-LawOfDemeter.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S1_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M9-2</span><span class="title">Class Methods At Work</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-2-Principles-02-AboutClassMethodsAndRegistration.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M9-3</span><span class="title">About Registration: When class method-based registration is too much</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-3-Principles-03-AboutRegistration.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S3_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M9-4</span><span class="title">Application settings: From a monolithic to a modular architecture</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-4-CaseStudy-06-LayeredSettingsArchitecture.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S4_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M9-5</span><span class="title">Learning from a Sokoban implementation</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-5-CaseStudy-05-Sokoban-Analysis.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S5_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M9-6</span><span class="title">Class vs. Object-Oriented Programming</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M9-6-ClassVSObjectProgramming.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M09_S6_V2.mp4">Video</a></span></li>
+        </ul>
+      </article>
+      <article class="week" id="module10">
+        <h3><small>Module 10</small>About Types</h3>
+        <p>This modules focuses on typing and their relation with object-oriented design.</p>
+        <details class="objectives">
+          <summary>Teaching objectives (5)</summary>
+          <ul>
+            <li>Disprove the common misconception that instance variables must be private</li>
+            <li>Explain the difference between Subclasses and Subtypes</li>
+            <li>Describe the relationship between sending a message associated with the selection of lookup methods and static types</li>
+            <li>Explain the need for interfaces in statistically-typed languages and their uselessness in dynamically-typed languages</li>
+            <li>Explain the pros and cons of using defensive checks in programming</li>
+          </ul>
+        </details>
+        <ul class="items">
+          <li><span class="kind k-lecture">M10-1</span><span class="title">The two interfaces: In presence of delta programming</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M10-1-Principles-12-DualInterfaces.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M10_S1.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M10-2</span><span class="title">Subclassing vs. Subtyping</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M10-2-Principles-09-SubtypingVsSubclassing.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M10_S2_V2.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M10-3</span><span class="title">About type and method lookup</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M10-3-Principles-10-DynamicStaticType.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M10_S3.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M10-4</span><span class="title">Polymorphic objects: Support for software evolution</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M10-4-Principles-11-PolymorphismSupportEvolution.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M10_S4_V3.mp4">Video</a></span></li>
+          <li><span class="kind k-lecture">M10-5</span><span class="title">About defensive programming</span><span class="links"><a class="pdf" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Slides/M10-5-Principles-05-AboutDefensiveProgramming.pdf">Slides</a> <a class="vid" href="https://rmod-pharo-mooc.lille.inria.fr/AdvancedDesignMooc/Videos/M10_S5.mp4">Video</a></span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+  <section id="resources" class="soft">
+    <div class="wrap">
+      <h2>Resources</h2>
+      <p>Free online resources are on the <a href="https://www.pharo.org/documentation">Pharo documentation</a> page.
+      We recommend the updated <em>Pharo by Example</em>, the Pharo cheat sheet, and <em>Learning Object-Oriented
+      Programming, Design and TDD with Pharo</em> on <a href="https://books.pharo.org/">books.pharo.org</a>.</p>
+    </div>
+  </section>
+  <section id="authors">
+    <div class="wrap">
+      <h2>The authors</h2>
+      <div class="grid">
+        <div class="card teacher"><img src="pictures/sducasse.png" alt="Stéphane Ducasse"><h3>Stéphane Ducasse</h3><p>Stéphane Ducasse is directeur de recherche at Inria. He leads the RMoD team. He is expert in two domains: object-oriented language design and reengineering. His works on traits have been introduced in AmbientTalk, Slate, Pharo, Perl-6, PHP 5.4 and Squeak. They have also influenced JavaScript, Scala and Fortress. Stéphane is also expert on software quality, program understanding, program visualisations, reengineering and metamodeling. He is one of the developers of Pharo. He is also one of the developers of Moose, an open-source software analysis platform. He created Synectique a company building dedicated tools for advanced software analysis. Stéphane wrote several books on programming learning and other topics such as web programming.</p></div>
+        <div class="card teacher"><img src="pictures/lfabresse.png" alt="Luc Fabresse"><h3>Luc Fabresse</h3><p>Luc Fabresse is currently professor in computer science at IMT Nord Europe. His researches focus on dynamic and reflective languages such as Pharo to better support programming in the context of mobile robotics and IoT. It involves deployment, code update, memory management and bootstrapping. He also works on fleet of collaborating mobile robots involving challenges such as: localization, navigation and distributed coordination. Luc's long-term vision is to be able to use Jedi mind trick on mobile robots ;-) Meanwhile, Luc gives many computer science lectures, co-organizes events (technical days, conferences,...), promotes Smalltalk (ESUG board member) and participates to its open-source implementation Pharo.</p></div>
+        <div class="card teacher"><img src="pictures/gpolito.jpg" alt="Guillermo Polito"><h3>Guillermo Polito</h3><p>Guille Polito is a permanent researcher at Inria of the University of Lille, within the EVREF team. Guille’s main research interests are programming language implementations, Virtual machines, testing, programming tools, and modular systems. He has more than 15 years in teaching advanced OOP.</p></div>
+        <div class="card teacher"><img src="pictures/ptesone.jpg" alt="Pablo Tesone"><h3>Pablo Tesone</h3><p>Pablo Tesone is Pharo consortium engineer. He holds a PhD in Computer Science from the University of Lille. Prior to that, Pablo was during 10 years an engineer in large corporates. Pablo has a large spectrum of skills ranging from low-level assembly to high-level reflective systems. He is one of the engineers behind the Pharo Virtual machines. He is the father of stateful traits as available in Pharo. He has more than 15 years in teaching advanced OOP.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="partners" class="soft">
+    <div class="wrap">
+      <h2>The partners</h2>
+      <div class="partners">
+        <a href="https://www.inria.fr/"><img src="pictures/logo-inria.jpeg" alt="logo Inria"></a>
+        <a href="https://www.univ-lille.fr/"><img src="pictures/universite-lille.png" alt="logo Université de Lille"></a>
+        <a href="https://imt-nord-europe.fr/"><img src="pictures/logo-IMT.jpg" alt="logo IMT Nord Europe"></a>
+        <a href="https://www.unit.eu/"><img src="pictures/unit.png" alt="logo Unit"></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">This web page is hosted on <a href="https://github.com/pharo-mooc/AdvancedOODesignMOOC-website">GitHub</a>.</div>
+</footer>
+
 </body>
 </html>
